@@ -1,0 +1,54 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="terraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97757"/>
+      <stop offset="100%" stop-color="#a0522d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer ornate circle -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#terraGrad)" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="url(#terraGrad)" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Decorative dots top -->
+  <circle cx="100" cy="22" r="2" fill="url(#terraGrad)"/>
+  <circle cx="100" cy="178" r="2" fill="url(#terraGrad)"/>
+
+  <!-- Crossed fork + knife motif -->
+  <g transform="translate(100, 95)">
+    <!-- Fork (left, rotated) -->
+    <g transform="rotate(-25)">
+      <!-- Fork handle -->
+      <rect x="-1.5" y="-5" width="3" height="55" fill="url(#terraGrad)" rx="0.5"/>
+      <!-- Fork tines -->
+      <rect x="-7" y="-32" width="1.5" height="28" fill="url(#terraGrad)"/>
+      <rect x="-3" y="-32" width="1.5" height="28" fill="url(#terraGrad)"/>
+      <rect x="1.5" y="-32" width="1.5" height="28" fill="url(#terraGrad)"/>
+      <rect x="5.5" y="-32" width="1.5" height="28" fill="url(#terraGrad)"/>
+      <!-- Top connector -->
+      <rect x="-7" y="-32" width="14" height="2" fill="url(#terraGrad)"/>
+    </g>
+    
+    <!-- Knife (right, rotated) -->
+    <g transform="rotate(25)">
+      <!-- Knife handle -->
+      <rect x="-1.5" y="-5" width="3" height="55" fill="url(#terraGrad)" rx="0.5"/>
+      <!-- Knife blade -->
+      <path d="M -3 -32 L 3 -32 L 2 -3 L -2 -3 Z" fill="url(#terraGrad)"/>
+    </g>
+  </g>
+
+  <!-- Top decorative text -->
+  <text x="100" y="48" text-anchor="middle"
+        font-family="Georgia, serif" font-style="italic" font-size="9" letter-spacing="3"
+        fill="url(#terraGrad)" opacity="0.85">
+    maison
+  </text>
+
+  <!-- Bottom text -->
+  <text x="100" y="172" text-anchor="middle"
+        font-family="monospace" font-size="5.5" letter-spacing="2.5"
+        fill="url(#terraGrad)" opacity="0.7">
+    EST · MMXVIII
+  </text>
+</svg>
